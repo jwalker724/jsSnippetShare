@@ -3,6 +3,7 @@ An place to share JavaScript tips tricks and snippets. The goal is to build this
 
 ### Code Snippets
 * [isRequired] - Form field validation class that verifies if a field is populated and if it is required and populated based on another field value (optional)
+* [Performance analysis] - Using console.time and console.timeEnd we can check or compare the performance of an operation.
 
 ### Tips & Tricks
 
@@ -78,3 +79,4 @@ Please follow this simple style-guide for all code contributions:
 * Tips & Tricks should be no more than a pargraph or two, longer Tips & Tricks should be moved to a Code Snippets
 
 [isRequired]: <https://github.com/jwalker724/jsSnippetShare/blob/master/src/isrequired.md>
+[Performance analysis]: <https://github.com/jwalker724/jsSnippetShare/blob/master/src/performance.md>
