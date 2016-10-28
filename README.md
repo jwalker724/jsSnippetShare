@@ -56,4 +56,4 @@ Please follow this simple style-guide for all code contributions:
 * Make sure to include comments
 * Tips & Tricks should be no more than a pargraph or two, longer Tips & Tricks should be moved to a Code Snippets
 
-[isRequired]: <https://github.com/jwalker724/dillinger/jsSnippetShare/master/src/isrequired.md>
+[isRequired]: <https://github.com/jwalker724/jsSnippetShare/blob/master/src/isrequired.md>
