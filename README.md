@@ -6,6 +6,27 @@ An place to share JavaScript tips tricks and snippets. The goal is to build this
 
 ### Tips & Tricks
 
+##### every() method
+
+The .every() method can be used to run a function or test on every element in the array
+```sh
+// syntax
+array.every(callback)
+```
+```sh
+// Examples:
+// Test the every element in the array is greater than or equal to 5
+[72, 5, 8, 30, 44].every(e => e >= 5); // returns true
+[72, 5, 8, 3, 44].every(e => e >= 5); // returns false
+
+// Same test using external callback function
+function isGTEfive(element) {
+  return element >= 5;
+}
+[72, 5, 8, 30, 44].every(isGTEfive); // returns true
+[72, 5, 8, 3, 44].every(isGTEfive); // returns false
+```
+
 ##### Short circuting with 'OR' logic
 
 To set a variable to one thing if it is defined, but a default value if it is not.
@@ -17,7 +38,7 @@ var goodDay = sunShine || not
 // without or logic (old way)
 var goodDay = not;
 if (sunShine) {
-  var goodDay =sunShine;
+  var goodDay = sunShine;
 }
 ```
 
