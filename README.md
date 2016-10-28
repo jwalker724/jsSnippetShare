@@ -1,5 +1,5 @@
 # jsSnippetShare
-An place to share JavaScript tips tricks and snippets. The goal is the build this out so it can be a quick reference with reusable easy to understand examples.
+An place to share JavaScript tips tricks and snippets. The goal is to build this out so it can be a quick reference with reusable easy to understand examples.
 
 ### Code Snippets
 * [isRequired] - Form field validation class that verifies if a field is populated and if it is required and populated based on another field value (optional)
