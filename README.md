@@ -1,2 +1,59 @@
 # jsSnippetShare
-JavaScript Snippets and tip share
+An place to share JavaScript tips tricks and snippets. The goal is the build this out so it can be a quick reference with reusable easy to understand examples.
+
+### Code Snippets
+* [isRequired] - Form field validation class that verifies if a field is populated and if it is required and populated based on another field value (optional)
+
+### Tips & Tricks
+
+##### Short circuting with 'OR' logic
+
+To set a variable to one thing if it is defined, but a default value if it is not.
+```sh
+// using or logic
+var goodDay = sunShine || not
+```
+```sh
+// without or logic (old way)
+var goodDay = not;
+if (sunShine) {
+  var goodDay =sunShine;
+}
+```
+
+##### Ternary operator
+
+Single line if expression
+
+```sh
+// syntax
+condition ? expr1 : expr2
+```
+```sh
+// example
+"Total price is " + (isMember ? "$5.00" : "$25.00");
+```
+
+### Contributing ##
+This is an open source project and your contributions are welcomed and encouraged.
+
+- Fork this repository
+- For code snippets: (see Style-Guide)
+   - add a markdown file to the src folder containing the JavaScript code
+   - add a short clear descriptive to the "Code Snippets" section section in the `readme.md` file.
+- For short informational Tips & Tricks (see Style-Guide)
+   - add a short clear descriptive title followed by the Tip or Trick to the "Tips & Tricks" section in the `readme.md` file.
+- Add your name to the "contributors" section in the `package.json` file.
+- Submit a Pull Request
+
+### Style-Guide ###
+Please follow this simple style-guide for all code contributions:
+
+* Indent using spaces.
+* camelCase all callables.
+* Use semi-colons.
+* Place a space after a conditional or function name, and its conditions/arguments. `function (...) {...}`
+* Make sure to include comments
+* Tips & Tricks should be no more than a pargraph or two, longer Tips & Tricks should be moved to a Code Snippets
+
+[isRequired]: <https://github.com/jwalker724/dillinger/jsSnippetShare/master/src/isrequired.md>
