@@ -35,7 +35,7 @@ To set a variable to one thing if it is defined, but a default value if it is no
 // using or logic
 var goodDay = sunShine || not
 ```
-```sh
+```js
 // without or logic (old way)
 var goodDay = not;
 if (sunShine) {
@@ -51,9 +51,23 @@ Single line if expression
 // syntax
 condition ? expr1 : expr2
 ```
-```sh
+```js
 // example
 "Total price is " + (isMember ? "$5.00" : "$25.00");
+```
+
+##### Double Tilde
+
+The double tilde can be used as a quick way to truncate a value to an integer.
+It's nice because it never returns NaN. If it fails, it just returns 0.
+
+```js
+console.log( ~~15.02 );    // returns 15
+console.log( ~~"45.81" );  // returns 45
+console.log( ~~-5.8 );     // returns -5
+console.log( ~~"car" );    // returns 0
+console.log( ~~[] );       // returns 0
+console.log( ~~null );     // returns 0
 ```
 
 ### Contributing ##
