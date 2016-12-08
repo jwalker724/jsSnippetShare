@@ -7,6 +7,20 @@ An place to share JavaScript tips tricks and snippets. The goal is to build this
 
 ### Tips & Tricks
 
+##### Double Tilde
+
+The double tilde can be used as a quick way to truncate a value to an integer.
+It's nice because it never returns NaN. If it fails, it just returns 0.
+
+```js
+console.log( ~~15.02 );    // returns 15
+console.log( ~~"45.81" );  // returns 45
+console.log( ~~-5.8 );     // returns -5
+console.log( ~~"car" );    // returns 0
+console.log( ~~[] );       // returns 0
+console.log( ~~null );     // returns 0
+```
+
 ##### every() method
 
 The .every() method can be used to run a function or test on every element in the array
@@ -27,6 +41,23 @@ function isGTEfive(element) {
 [72, 5, 8, 30, 44].every(isGTEfive); // returns true
 [72, 5, 8, 3, 44].every(isGTEfive); // returns false
 ```
+
+##### The .find() method can be used to search and array and return the first object that matches
+```js
+// Given an array of objects named critters
+const critters = [
+  {id: 1, critter: 'dog', age: 1},
+  {id: 2, critter: 'dog', age: 2},
+  {id: 3, critter: 'cat', age: 2},
+  {id: 4, critter: 'bird', age: 1}
+];
+
+// Return the first object to contain age = 2
+critters.find( obj => obj.age === 2); // returns {id: 2, critter: 'dog', age: 2}
+
+// Return the first object to contain age = 2 where the array index > 1
+critters.find( (obj, idx) => obj.age === 2 && idx > 1); // returns {id: 3, critter: "cat", age: 2}
+
 
 ##### Short circuting with 'OR' logic
 
@@ -54,20 +85,6 @@ condition ? expr1 : expr2
 ```js
 // example
 "Total price is " + (isMember ? "$5.00" : "$25.00");
-```
-
-##### Double Tilde
-
-The double tilde can be used as a quick way to truncate a value to an integer.
-It's nice because it never returns NaN. If it fails, it just returns 0.
-
-```js
-console.log( ~~15.02 );    // returns 15
-console.log( ~~"45.81" );  // returns 45
-console.log( ~~-5.8 );     // returns -5
-console.log( ~~"car" );    // returns 0
-console.log( ~~[] );       // returns 0
-console.log( ~~null );     // returns 0
 ```
 
 ### Contributing ##
