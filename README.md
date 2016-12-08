@@ -57,7 +57,7 @@ critters.find( obj => obj.age === 2); // returns {id: 2, critter: 'dog', age: 2}
 
 // Return the first object to contain age = 2 where the array index > 1
 critters.find( (obj, idx) => obj.age === 2 && idx > 1); // returns {id: 3, critter: "cat", age: 2}
-
+```
 
 ##### Short circuting with 'OR' logic
 
