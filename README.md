@@ -22,7 +22,6 @@ dayOfYear(new Date("1776-07-04"));  // 185
 dayOfYear(new Date("2019-12-25"));  // 358
 ```
 
-
 ##### Double Tilde
 
 The double tilde can be used as a quick way to truncate a value to an integer.
@@ -74,6 +73,7 @@ critters.find( obj => obj.age === 2); // returns {id: 2, critter: 'dog', age: 2}
 // Return the first object to contain age = 2 where the array index > 1
 critters.find( (obj, idx) => obj.age === 2 && idx > 1); // returns {id: 3, critter: "cat", age: 2}
 ```
+
 ##### stringSize()
 
 A snippet to return the length of a string in bytes.
