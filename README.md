@@ -7,6 +7,22 @@ An place to share JavaScript tips tricks and snippets. The goal is to build this
 
 ### Tips & Tricks
 
+##### dayOfYear()
+
+A snippet to get the day of the year from a Date object.
+
+```js
+const dayOfYear = date =>
+  Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
+```
+
+```js
+// Examples:
+dayOfYear(new Date("1776-07-04"));  // 185
+dayOfYear(new Date("2019-12-25"));  // 358
+```
+
+
 ##### Double Tilde
 
 The double tilde can be used as a quick way to truncate a value to an integer.
@@ -57,6 +73,17 @@ critters.find( obj => obj.age === 2); // returns {id: 2, critter: 'dog', age: 2}
 
 // Return the first object to contain age = 2 where the array index > 1
 critters.find( (obj, idx) => obj.age === 2 && idx > 1); // returns {id: 3, critter: "cat", age: 2}
+```
+##### stringSize()
+
+A snippet to return the length of a string in bytes.
+
+```js const stringSize = str => new Blob([str]).size;```
+
+```js
+// Examples:
+stringSize('Good Day');  // 8
+stringSize('👀');        // 4
 ```
 
 ##### Short circuting with 'OR' logic
